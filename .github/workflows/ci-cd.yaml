@@ -1,4 +1,4 @@
-name: CI/CD Workflow for our Class1
+name: CI/CD Workflow for our Class3
 
 on: 
   push:
