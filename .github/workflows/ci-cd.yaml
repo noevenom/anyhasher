@@ -106,11 +106,10 @@ jobs:
       security-events: write
     steps:
       - uses: actions/checkout@v4
-
-      # - name: Initialize CodeQL
-      #   uses: github/codeql-action/init@v2
-      #   with:
-      #     config-file: ./.github/codeql/codeql.config.yml
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@v2
+        with:
+           config-file: ./.github/codeql/codeql.config.yml
 
       - name: Setup Node
         uses: actions/setup-node@v4
